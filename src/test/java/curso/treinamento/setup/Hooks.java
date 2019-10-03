@@ -21,9 +21,11 @@ public class Hooks {
 		
 		System.setProperty("webdriver.chrome.driver", "src"+ File.separator +
 				"test" + File.separator + "resources" + 	File.separator + 
-				"mac" + File.separator + "chromedriver"); 
+				"mac" + File.separator + "chromedriver.exe"); 
 								
 		driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

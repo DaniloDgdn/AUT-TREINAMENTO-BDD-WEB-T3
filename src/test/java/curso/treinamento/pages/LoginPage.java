@@ -41,12 +41,12 @@ public class LoginPage {
 	
 	public boolean validar_pagina() { 
 				
-		return Helper.elemento_existe(tituloPagina, 10);
+		return Helper.elemento_existe(tituloPagina, 2);
 	}
 	
 	public void clicar_btn_remove_frame() throws InterruptedException {
 		
-		if (Helper.elemento_existe(linkRemoveFrame, 10))
+		if (Helper.elemento_existe(linkRemoveFrame, 2))
 			linkRemoveFrame.click();
 	}
 	
